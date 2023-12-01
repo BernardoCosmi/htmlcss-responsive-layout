@@ -13,7 +13,7 @@ html{
 }
 
 /* ANCHOR Desktop version */
-@media screen and (min-width:769px) and (max-width:1024px){
+@media screen and (min-width:1024px) and (max-width:1920px){
     .nav-menù-flex>#menù-compact{
         display: none;
     }
@@ -60,9 +60,8 @@ header{
 /* SECTION 1 */
 .container{
     margin: 20vh auto 10vh;
-    max-width: 90%;
+    max-width: 80%;
     padding: 2vh;
-
 }
 .general-info{
     display: flex;
@@ -74,7 +73,7 @@ header{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    min-height: 20vh;
+    min-height: fit-content;
     background-color: #b5ddff;
     border-radius: 25px;
     width: calc((((100%)/3)) - 30px);
@@ -83,9 +82,8 @@ header{
     line-height: 1.5;
 }
 .card>span{
-    min-width: 30%;
-    min-height: 30%;
-    padding: ;
+    min-width: 25%;
+    min-height: 25%;
 }
 .card>span>svg{
     width: 100%;
@@ -93,11 +91,16 @@ header{
 }
 .card h2{
     color: #0083fc;
+    padding-top: 10px;
+}
+.card > p{
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    color: rgb(112, 112, 112);
 }
 .large.card{
     flex-direction: row;
     width: calc((((100%)/3)*2) - 20px);
-    align-items: flex-end;
     margin-bottom: 0;
     padding: 0 20px;
     column-gap: 20px;
@@ -124,14 +127,14 @@ header{
     color: white;
 }
 .large.card>figure{
-    width: 80%;
-    height: 80%;
+    align-self: flex-end;
+    max-width: 60%;
+    max-height: 60%;
 }
 .large.card>figure>img{
     max-width: 100%;
     max-height: 100%;
     display: block;
-    margin: auto;
 }
 
 
@@ -202,7 +205,6 @@ header{
 
 /* ANCHOR Tablet version */
 @media screen and (max-width:768px) and (min-width:426px){
-
     /* SECTION 0 - Header */
     html{
         font-size: 1rem;
@@ -217,8 +219,8 @@ header{
         display: none;
     }
     .nav-menù-flex>a{
-        width: 9vh;
-        height: 9vh;
+        width: 5vh;
+        height: 5vh;
     }
     .nav-menù-flex>a>svg{
         width:100%;
@@ -226,8 +228,37 @@ header{
     }
 
     /* SECTION 1 */
-    
-}
+    .container{
+        margin: 13vw auto 5vw;
+        max-width: 100%;
+        padding: 2vh;
+    }
+    .general-info{
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .large.card{
+        flex-direction: column;
+        width: calc((((100%)/3)*2) - 20px);
+        align-items: flex-start;
+        margin-bottom: 0;
+        padding: 0 20px;
+        column-gap: 20px;
+        text-align: left;
+    }
+    .large.card > div{
+        max-width: 100%;
+        align-self: center;
+    }
+    .large.card>figure{
+        align-self: flex-start;
+    }
+    .large.card>figure>img{
+        margin-top: 20px;
+        max-width: 100%;
+        display: block;
+    }
 
 
 
