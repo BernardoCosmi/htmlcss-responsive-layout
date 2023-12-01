@@ -1,17 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     border: 1px solid black;
 }
+html{
+    font-size: 1rem;
+    font-family: 'PT Sans', sans-serif;
+}
 
+/* ANCHOR Desktop version */
 /* SECTION 0 - Header */
 header{
     min-height: 5vh;
     position: fixed;
-    margin-right: 0;
-    margin-left: 0;
-    min-width: 100vw;
+    right: 0;
+    left: 0;
+    top: 0;
     padding: 2vh;
     background-color: #0083fc;
 }
@@ -22,8 +30,35 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+header{
+    padding-bottom: 10px;
+}
+.nav-menù-flex{
+    max-width: 90%;
+}
+.menù-list{
+    display: flex;
+    column-gap: 20px;
+}
+.menù-list>a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 15px;
+}
+.menù-list>a:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (min-width:769px){
+    .nav-menù-flex>#menù-compact{
+        display: none;
+    }
+}
 /* ANCHOR Mobile version */
-@media screen and (max-width:425px) {
+@media screen and (max-width:425px){
+    /* SECTION 0 - Header */
     html{
         font-size: 0.7rem;
     }
@@ -33,23 +68,24 @@ header{
     .nav-menù-flex{
         max-width: 90%;
     }
-    nav>div{
+    .menù-list{
         display: none;
     }
-    nav>a{
+    #menù-compact{
         width: 9vh;
         height: 9vh;
     }
-    nav>a>svg{
+    #menù-compact>svg{
         width:100%;
         height: 100%;
     }
 
 }
 /* ANCHOR Tablet version */
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px) and (min-width:425px){
+    /* SECTION 0 - Header */
     html{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     header{
         padding-bottom: 10px;
@@ -57,22 +93,20 @@ header{
     .nav-menù-flex{
         max-width: 90%;
     }
-    nav>div{
-        
-    }
-    nav>a{
+    .nav-menù-flex>.menù-list{
         display: none;
     }
-    nav>a>svg{
- 
+    .nav-menù-flex>a{
+        width: 9vh;
+        height: 9vh;
     }
-
+    .nav-menù-flex>a>svg{
+        width:100%;
+        height: 100%;
+    }
 }
 
 
-/* ANCHOR Desktop version */
-@media screen and (max-width:1024px) {
-}
 
 
 
