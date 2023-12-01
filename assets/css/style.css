@@ -13,9 +13,15 @@ html{
 }
 
 /* ANCHOR Desktop version */
+@media screen and (min-width:769px) and (max-width:1024px){
+    .nav-menù-flex>#menù-compact{
+        display: none;
+    }
+}
+
 /* SECTION 0 - Header */
 header{
-    min-height: 5vh;
+    min-height: 10vh;
     position: fixed;
     right: 0;
     left: 0;
@@ -51,13 +57,116 @@ header{
     color: black;
 }
 
-@media screen and (min-width:769px){
-    .nav-menù-flex>#menù-compact{
-        display: none;
-    }
+/* SECTION 1 */
+.container{
+    margin: 15vh auto 10vh;
+    max-width: 90%;
+    padding: 2vh;
+
 }
+.general-info{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 20vh;
+    background-color: #b5ddff;
+    border-radius: 25px;
+    width: calc((((100%)/3)) - 30px);
+    gap: 10px;
+    padding: 20px 0 10px;
+    line-height: 1.5;
+}
+.card>span{
+    min-width: 30%;
+    min-height: 30%;
+    padding: ;
+}
+.card>span>svg{
+    width: 100%;
+    height: 100%;
+}
+.card h2{
+    color: #0083fc;
+}
+.large.card{
+    flex-direction: row;
+    width: calc((((100%)/3)*2) - 20px);
+    align-items: flex-end;
+    margin-bottom: 0;
+    padding: 0 20px;
+    column-gap: 20px;
+    text-align: left;
+}
+.large.card > div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 50%;
+    align-self: center;
+}
+.large.card>div>button{
+    align-self: flex-start;
+    padding: 5px 40px;
+    border-radius: 15px;
+    background-color: #0083fc;
+}
+.large.card>div>button>a{
+    margin-bottom: 30px;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.large.card>div>button:hover{
+    background-color: white;
+}
+.large.card>div>button:hover a{
+    background-color: white;
+    color: #0083fc;
+    fill: #0083fc;
+}
+.large.card>figure{
+    width: 80%;
+    height: 80%;
+}
+.large.card>figure>img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ANCHOR Mobile version */
 @media screen and (max-width:425px){
+
     /* SECTION 0 - Header */
     html{
         font-size: 0.7rem;
@@ -80,9 +189,32 @@ header{
         height: 100%;
     }
 
+    /* SECTION 1 */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ANCHOR Tablet version */
 @media screen and (max-width:768px) and (min-width:425px){
+
     /* SECTION 0 - Header */
     html{
         font-size: 1rem;
@@ -104,6 +236,8 @@ header{
         width:100%;
         height: 100%;
     }
+
+    /* SECTION 1 */
 }
 
 
