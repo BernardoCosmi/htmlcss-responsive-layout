@@ -59,7 +59,7 @@ header{
 
 /* SECTION 1 */
 .container{
-    margin: 15vh auto 10vh;
+    margin: 20vh auto 10vh;
     max-width: 90%;
     padding: 2vh;
 
@@ -123,14 +123,6 @@ header{
     text-decoration: none;
     color: white;
 }
-.large.card>div>button:hover{
-    background-color: white;
-}
-.large.card>div>button:hover a{
-    background-color: white;
-    color: #0083fc;
-    fill: #0083fc;
-}
 .large.card>figure{
     width: 80%;
     height: 80%;
@@ -141,21 +133,6 @@ header{
     display: block;
     margin: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -190,6 +167,32 @@ header{
     }
 
     /* SECTION 1 */
+    .card{
+        min-height: 20vh;
+        background-color: #b5ddff;
+        border-radius: 25px;
+        width:100%;
+        padding: 20px 20px 10px;
+        font-size: 1.2rem;
+    }
+    .large.card{
+        flex-direction: column;
+        padding-top: 20px;
+        width: 100%;
+        margin-bottom: 0;
+        row-gap: 30px;
+        text-align: center;
+    }
+    .large.card > div{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .large.card>div>button{
+        align-self: center;
+    }
+    .large.card>figure{
+        align-self: center;
+    }
 }
 
 
@@ -197,23 +200,8 @@ header{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ANCHOR Tablet version */
-@media screen and (max-width:768px) and (min-width:425px){
+@media screen and (max-width:768px) and (min-width:426px){
 
     /* SECTION 0 - Header */
     html{
@@ -238,6 +226,7 @@ header{
     }
 
     /* SECTION 1 */
+    
 }
 
 
