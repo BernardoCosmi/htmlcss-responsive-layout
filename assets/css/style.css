@@ -1,6 +1,93 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     border: 1px solid black;
+}
+
+/* SECTION 0 - Header */
+header{
+    min-height: 5vh;
+    position: fixed;
+    margin-right: 0;
+    margin-left: 0;
+    min-width: 100vw;
+    padding: 2vh;
+    background-color: #0083fc;
+}
+.nav-menù-flex{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ANCHOR Mobile version */
+@media screen and (max-width:425px) {
+    html{
+        font-size: 0.7rem;
+    }
+    header{
+        padding-bottom: 10px;
+    }
+    .nav-menù-flex{
+        max-width: 90%;
+    }
+    nav>div{
+        display: none;
+    }
+    nav>a{
+        width: 9vh;
+        height: 9vh;
+    }
+    nav>a>svg{
+        width:100%;
+        height: 100%;
+    }
+
+}
+/* ANCHOR Tablet version */
+@media screen and (max-width:768px) {
+    html{
+        font-size: 0.7rem;
+    }
+    header{
+        padding-bottom: 10px;
+    }
+    .nav-menù-flex{
+        max-width: 90%;
+    }
+    nav>div{
+        
+    }
+    nav>a{
+        display: none;
+    }
+    nav>a>svg{
+ 
+    }
+
+}
+
+
+/* ANCHOR Desktop version */
+@media screen and (max-width:1024px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Clearfix */
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
 }
