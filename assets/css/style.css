@@ -278,6 +278,57 @@ header{
 .testimonial-card>div>h4{
     text-transform: uppercase;
 }
+/* SECTION 4 */
+.benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #9593e6;
+}
+.benefits>h1{
+    color: white;
+    margin-top: 20px;
+}
+.benefits-container{
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.benefits-card{
+    width: calc(((100%)/3) - 14px);
+    border-radius: 25px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    row-gap: 20px;
+}
+.benefits-card>h1{
+    font-size: xxx-large;
+    color: #9593e6;
+}
+.benefits-card>h3{
+    color: #9593e6;
+    text-transform: capitalize;
+}
+.benefits-card>p{
+    line-height: 1.5;
+}
+.benefits-card>a{
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+    background-color: #9593e6;
+    border-radius: 25px;
+    text-decoration: none;
+    max-width: 40%;
+    margin-left: 30px;
+}
 
 
 /* ANCHOR Mobile version */
