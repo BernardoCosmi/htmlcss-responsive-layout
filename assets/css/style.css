@@ -389,8 +389,69 @@ header{
     text-decoration: none;
     color: white;
 }
+/* SECTION 6 */
+.get-started{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #9593e6;
+    color: white;
+    padding-bottom: 30px;
+}
+.get-started>span{
+    text-transform:uppercase;
+    margin-top: 20px;
+    color: lightgrey;
+}
+.get-started>h2{
+    text-transform: capitalize;
+    font-size: xx-large;
+}
+.get-started>h1{
+    font-size: 400%;
+    text-transform: capitalize;
+    color: #fdc15f;
+}
+.get-started>p{
+    line-height: 1.5;
+    max-width: 60%;
+    text-align: center;
+}
+.get-started>a{
+    padding: 10px 30px;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    color: #9593e6;
+    border-radius: 25px;
+}
+.get-started>p>a{
+    color: white;
+}
+/* SECTION 7 (FOOTER) */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+    background-color: #333333;
+    color: lightgrey;
+    line-height: 1.5;
+}
+footer>div{
+    max-width: 50%;
+    text-align: center;
+    font-size: smaller;
 
-
+}
+footer>p{
+    max-width: 50%;
+    text-align: center;
+    font-size: smaller;
+}
 
 
 
@@ -563,7 +624,65 @@ header{
         margin: 10%;
         align-self: flex-start;
     }
+/* SECTION 6 */
+    .get-started{
+        font-size: larger;
+    }
+    .get-started>span{
+        font-size: large;
+    }
+    .get-started>h2{
+        max-width: 70%;
+        text-align: center;
+    }
+    .get-started>p{
+        max-width: 80%;
+    }
+    .get-started>a{
+        padding: 20px;
+        width: 70%;
+        text-align: center;
+        font-size: large;
+        color: #9593e6;
+        border-radius: 45px;
+    }
+/* SECTION 7 */
+    footer{
+        font-size: larger;
+    }
+    footer>div{
+        max-width: 80%;
+    }
+    footer>p{
+        max-width: 80%;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ANCHOR Tablet version */
 @media screen and (max-width:768px) and (min-width:426px){
